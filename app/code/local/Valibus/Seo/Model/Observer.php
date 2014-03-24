@@ -16,7 +16,7 @@ class Valibus_Seo_Model_Observer
                 $layout->getBlock('head')->setRobots($robotsParam);
             }
         } catch (Exception $e) {
-            mage::log($e->getMessage(), null, 'valibus_seo_crawl_management.log');
+            mage::log("DEBUG:: ".$e->getMessage(), null, 'valibus_seo_crawl_management.log');
 
         }
     }
